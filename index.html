@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the number | by Tobias Molinero</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="game-display">
+            <h1 class="title">Guess the number</h1>
+            <h6><i>by Tobias Molinero developer, 2023 &#169;</i></h6>
+            <button id="btnStart" onclick="startGame()">Play</button>
+            <div id="gameZone" hidden>
+                <h3>I'm thinking of a number between 1 and 100. Can you guess the number?</h3>
+                <p id="infoIntentos"></p>
+                <label for="inputNumber">Guess: </label>
+                <input type="text" id="inputNumber">
+                <button id="btnGuess" onclick="guessNumber()">Guess it</button>
+                <br>
+                <div id="results"></div>
+                <div class="buttons">
+                    <div>
+                        <button id="btnRestart" onclick="startGame()" hidden>Play again</button>
+                        <button id="btnExit" onclick="exitGame()" hidden>Exit</button>
+                    </div>
+                </div>
+            </div>
+            <!-- <p id="parrNumber"></p> -->
+        </div>
+        <!-- <p>Desarrollado por Tobias Molinero &#169</p> -->
+    </div>
+</body>
+</html>
